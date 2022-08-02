@@ -1,0 +1,270 @@
+:root{
+  --primary:#AA0601;
+  --secondary:#B4F5FA;
+}
+
+@tailwind base;
+@layer base{
+  body{
+    font-family: 'Roboto Mono', 'Noto Sans', sans-serif;
+    @apply leading-normal;
+  }
+  img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    @apply text-secondary
+  }
+  input[type='checkbox'] {
+    @apply accent-primary
+  }
+  .container{
+    padding: 0 12px ;
+    @media (min-width: 640px;) {
+      padding: 0;
+    }
+  }
+}
+@tailwind components;
+@layer components {
+  .logo{
+    background: url("../images/logo-white.png");
+    width: 80px;
+    height: 48px;
+    background-size: cover;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+  }
+  .logo a{
+    width: 80px;
+    height: 48px;
+    display: block;
+  }
+  .header{
+    position: relative;
+  }
+  .hamburger{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+  }
+  .hamburger::before{
+    content:'';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background:white;
+    transform: translateY(-10px);
+    box-shadow: 0 10px white;
+    transition: 0.5s;
+  }
+  .hamburger::after{
+    content:'';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background:white;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+  .hamburger:hover::before{
+    background:  var(--secondary);
+    box-shadow: 0 10px var(--secondary);
+    transition: 0.5s;
+  }
+  .hamburger:hover::after{
+    background: var(--secondary);
+  }
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -150%;
+    left:50%;
+    opacity: 0;
+    transition: 0.5s;
+    gap: 0;
+  }
+  .nav li:hover a{
+    color: var(--secondary);
+  }
+  .banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../images/home-header-sm.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-picture{
+    background: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .btn{
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+  }
+  .btn-sm{
+    font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .btn:hover{
+    opacity: 0.6;
+  }
+  .card{
+    height: 100%;
+    box-shadow: 0 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+  }
+  .productlinker li{
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .productlinker li::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .productlinker li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    right: 0;
+    bottom: 0;
+    background: white;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .productlinker a{
+    position: relative;
+  }
+  .productlinker a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary);
+    z-index:1;
+  }
+  .productlinker a:hover{
+    color: var(--primary);
+    transition: 0.5s;
+  }
+  .productlinker li:hover::before{
+    transition: 0.5s;
+    left: -100%;
+  }
+  .productlinker li:hover::after{
+    transition: 0.5s;
+    right: -100%;
+  }
+  .pagenation{
+    display: flex;
+    justify-content: center;
+  }
+  .pagenation li{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: white;
+  }
+  .pagenation li:last-child{
+    border-right: 1px solid #000;
+    background: #F2F2F2;
+  }
+  .pagenation a{
+    display: inline-block;
+    color: #000;
+    padding: 10px 14px ;
+  }
+  .pagenation a:hover{
+    color: white;
+  }
+  .pagenation li:hover{
+    background: black;
+  }
+}
+
+@tailwind utilities;
+
+
+/* hover */
+
+
+
+/* hamburger 動畫 */
+.hamburgerActive::before{
+  transform: translateY(0) rotate(45deg);
+  box-shadow: 0 0 white;
+  transition: 0.5s;
+}
+.hamburgerActive:hover::before{
+  box-shadow: 0 0 var(--secondary);
+  transition: 0.5s;
+}
+.hamburgerActive::after{
+  transform: translateY(0) rotate(-45deg);
+  transition: 0.5s;
+}
+
+/* nav 選單滑出動畫 */
+
+.navActive{
+  background: var(--primary);
+  opacity: 1;
+  top: 100%;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+/* pagenation */
+
+.pagenationFocus {
+ 
+  background: black !important;
+}
+.pagenationFocus a{
+  color: white ;
+}
+/* break point */
+
+@media (min-width: 1024px) {
+  .banner{
+    width: 100%;
+    background: url("../images/home-header.png") no-repeat;
+    background-size: cover;
+  }
+}
