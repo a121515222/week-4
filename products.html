@@ -1,10 +1,41 @@
----
-title: 產品
-layout: ./app/layout.ejs
-engine: ejs
-current: products
----
-<ul class="productlinker flex justify-center text-center  font-bold  sm:text-2xl lg:text-[32px]">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>產品</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header bg-primary text-white py-4">
+    <div class="container flex justify-between align-center">
+      <div class="logo ml-3 md:ml-0"><a href="index.html">Home</a></div>
+      <div class="block md:hidden">
+        <div class="hamburger"></div>
+      </div>
+
+      <ul class="nav w-full bg-primary whitespace-nowrap text-20 text-center md:w-auto md:static md:opacity-100 md:space-x-14 md:translate-x-0">
+        <li class="w-1/2 border-x border-y border-white md:w-auto md:border-0 "><a class="block w-full py-3" href="products.html">系列鏡框</a></li>
+        <li class="w-1/2 border-r border-y border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">門市據點</a></li>
+        <li class="w-1/2 border-x border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" class="py-12" href="article.html">部落格</a></li>
+        <li class="w-1/2 border-r border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">常見問題</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="productlinker flex justify-center text-center  font-bold  sm:text-2xl lg:text-[32px]">
   <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">OPTICAL</a></li>
   <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">SUNGLASSES</a>
   </li>
@@ -121,3 +152,47 @@ current: products
     <li><a href="#">下一頁</a></li>
   </ul>
 </div>
+
+  <div class="bg-primary">
+    <div class="container text-white">
+      <div class="flex py-6 border-b border-white justify-between lg:pt-12 lg:pb-5 ">
+        <div class="flex flex-col">
+          <ul class="hidden  py-3 mb-9 md:flex  align-center space-x-12">
+            <li><a href="#">首頁</a></li>
+            <li><a href="products.html">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class="md:text-4xl">
+            <li class=""><i class="fa-solid fa-phone pr-[10px] lg:pr-5"></i><a
+                href="tel:0800-000-000">0800-000-000</a>
+            </li>
+            <li class=""><i class="fa-solid fa-envelope pr-[10px] lg:pr-5"></i><a
+                href="mailto:glasses@business.com">glasses@business.com</a></li>
+          </ul>
+        </div>
+
+        <ul class="flex speace-x-2 md:space-x-4 lg:space-x-8 ">
+          <li class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12 hover:opacity-80"><a href="#"><img src="./assets/images/ic-social-fb.png"
+                alt="facebook icon"></a></li>
+          <li class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12 hover:opacity-80"><a href="#"><img src="./assets/images/ic_social_line.png"
+                alt="line icon"></a></li>
+          <li class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12 hover:opacity-80"><a href="#"><img src="./assets/images//ic_social_ig.png"
+                alt="instagram icon"></a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-start lg:justify-between  speace-x-2 py-8">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="flex speace-x-2 lg:speace-x-12 ">
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+    </bg-primary>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
