@@ -581,9 +581,8 @@ select{
   outline:1px auto -webkit-focus-ring-color;
 }
 
-body{
+html{
     font-family: 'Roboto Mono', 'Noto Sans', sans-serif;
-    line-height:1.5;
   }
 
 img{
@@ -1436,7 +1435,6 @@ input[type='checkbox']{
 /* pagenation */
 
 .pagenationFocus {
- 
   background: black !important;
 }
 .pagenationFocus a{
