@@ -4,10 +4,11 @@
 }
 
 @tailwind base;
+
 @layer base{
-  body{
+
+  html{
     font-family: 'Roboto Mono', 'Noto Sans', sans-serif;
-    @apply leading-normal;
   }
   img{
     vertical-align: middle;
@@ -253,7 +254,6 @@
 /* pagenation */
 
 .pagenationFocus {
- 
   background: black !important;
 }
 .pagenationFocus a{
