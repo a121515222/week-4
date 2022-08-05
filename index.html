@@ -14,24 +14,29 @@
 </head>
 
 <body>
-  <div class="header bg-primary text-white py-4">
-    <div class="container flex justify-between align-center">
-      <div class="logo ml-3 md:ml-0"><a href="index.html">Home</a></div>
+  <div class="header bg-primary text-white py-4 relative">
+    <div class="container flex justify-between items-center">
+      <div class="bg-[url('../images/logo-white.png')] w-20 h-12 bg-cover whitespace-normal indent-[101%] overflow-hidden ml-3 md:ml-0"><a class="block h-12 w-20" href="index.html">Home</a></div>
       <div class="block md:hidden">
-        <div class="hamburger"></div>
+        <div class="hamburger h-[60px] w-[60px] relative cursor-pointer flex justify-center items-center z-100
+        before:absolute before:w-8 before:h-0.5 before:bg-white before:-translate-y-2.5 before:transition before:duration-500 before:shadow-hamburger
+        after:absolute after:w-8 after:h-0.5 after:bg-white after:translate-y-2.5 after:transition after:duration-500 
+        hover:before:bg-secondary hover:before:transition hover:before:shadow-hamburger hover:before:shadow-secondary
+        hover:after:transtion hover:after:duration-500 hover:after:bg-secondary
+        "></div>
       </div>
 
-      <ul class="nav w-full bg-primary whitespace-nowrap text-20 text-center md:w-auto md:static md:opacity-100 md:space-x-14 md:translate-x-0">
-        <li class="w-1/2 border-x border-y border-white md:w-auto md:border-0 "><a class="block w-full py-3" href="products.html">系列鏡框</a></li>
-        <li class="w-1/2 border-r border-y border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">門市據點</a></li>
-        <li class="w-1/2 border-x border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" class="py-12" href="article.html">部落格</a></li>
-        <li class="w-1/2 border-r border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">常見問題</a></li>
+      <ul class="js-nav flex flex-wrap absolute z-50 transition-all duration-500 top-[-150%] opacity-0 translate-x-[-50%] left-1/2 w-full bg-primary whitespace-nowrap text-sm text-center md:items-center md:w-auto md:static md:opacity-100 md:space-x-14 md:translate-x-0">
+        <li class="w-1/2 border-x border-y border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="products.html">系列鏡框</a></li>
+        <li class="w-1/2 border-r border-y border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="#">門市據點</a></li>
+        <li class="w-1/2 border-x border-b border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" class="py-12" href="article.html">部落格</a></li>
+        <li class="w-1/2 border-r border-b border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="#">常見問題</a></li>
       </ul>
     </div>
   </div>
 
   
-<div class="banner">
+<div class="flex justify-center items-center h-screen bg-[url('../images/home-header-sm.png')] bg-center bg-cover lg:bg-[url('../images/home-header.png')]">
   <div class="container flex flex-col items-end w-full">
     <h3 class="text-primary-dark md:text-4xl">Promise-Desert 2020 早春系列</h3>
     <h1 class="font-bold text-primary-dark text-2xl leading-normal md:text-[64px]">看得清，才能看得遠</h1>
@@ -82,7 +87,7 @@
     </li>
   </ul>
 </div>
-<div class="bg-picture">
+<div class="bg-[url('../images/bg.png')] bg-cover bg-center">
   <div class="container  text-center py-10 lg:py-20">
     <h2 class="text-white font-bold pb-12 text-2xl lg:text-5xl leading-normal">聯名設計鏡框</h2>
     <ul class="flex flex-wrap gap-6 lg:gap-0">
@@ -161,7 +166,7 @@
 </div>
 <div class="bg-primary-light">
   <div class="container py-10 lg:py-20 grid grid-cols-12 gap-x-6">
-    <div class="md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-10">
+    <div class="col-start-1 col-end-13 md:col-start-2 md:col-end-12 lg:col-start-4 lg:col-end-10">
       <h2 class="text-primary-dark text-center font-bold pb-12 text-2xl leading-normal md:text-5xl">聯絡我們</h2>
       <p class="pb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <label for="name" class="block pb-2">姓名</label>
@@ -182,13 +187,13 @@
       </div>
     </div>
     <div class="md:col-start-4 md:col-end-10 lg:col-start-5 lg:col-end-9">
-      <button class="btn bg-primary text-white w-full md:w-[35.2%] lg:w-[85.6%]">確認送出</button>
+      <button class="btn bg-primary text-white w-full">確認送出</button>
     </div>
   </div>
 </div>
 
   <div class="bg-primary">
-    <div class="container text-white">
+    <div class="container text-white text-xs">
       <div class="flex py-6 border-b border-white justify-between lg:pt-12 lg:pb-5 ">
         <div class="flex flex-col">
           <ul class="hidden  py-3 mb-9 md:flex  align-center gap-x-12">
@@ -199,10 +204,10 @@
             <li><a href="#">常見問題</a></li>
           </ul>
           <ul class="md:text-4xl">
-            <li class=""><i class="fa-solid fa-phone pr-[10px] lg:pr-5"></i><a
+            <li class=""><i class="fa-solid fa-phone pr-2.5 lg:pr-5"></i><a
                 href="tel:0800-000-000">0800-000-000</a>
             </li>
-            <li class=""><i class="fa-solid fa-envelope pr-[10px] lg:pr-5"></i><a
+            <li class=""><i class="fa-solid fa-envelope pr-2.5 lg:pr-5"></i><a
                 href="mailto:glasses@business.com">glasses@business.com</a></li>
           </ul>
         </div>

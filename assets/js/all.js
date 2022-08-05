@@ -1,8 +1,8 @@
 "use strict";
 
 var hamburger = document.querySelector('.hamburger');
-var nav = document.querySelector('.nav');
-var headerlink = document.querySelectorAll('.nav li a');
+var nav = document.querySelector('.js-nav');
+var headerlink = document.querySelectorAll('.js-nav li a');
 var pagenation = document.querySelectorAll('.pagenation li');
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('hamburgerActive');

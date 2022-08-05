@@ -14,28 +14,67 @@
 </head>
 
 <body>
-  <div class="header bg-primary text-white py-4">
-    <div class="container flex justify-between align-center">
-      <div class="logo ml-3 md:ml-0"><a href="index.html">Home</a></div>
+  <div class="header bg-primary text-white py-4 relative">
+    <div class="container flex justify-between items-center">
+      <div class="bg-[url('../images/logo-white.png')] w-20 h-12 bg-cover whitespace-normal indent-[101%] overflow-hidden ml-3 md:ml-0"><a class="block h-12 w-20" href="index.html">Home</a></div>
       <div class="block md:hidden">
-        <div class="hamburger"></div>
+        <div class="hamburger h-[60px] w-[60px] relative cursor-pointer flex justify-center items-center z-100
+        before:absolute before:w-8 before:h-0.5 before:bg-white before:-translate-y-2.5 before:transition before:duration-500 before:shadow-hamburger
+        after:absolute after:w-8 after:h-0.5 after:bg-white after:translate-y-2.5 after:transition after:duration-500 
+        hover:before:bg-secondary hover:before:transition hover:before:shadow-hamburger hover:before:shadow-secondary
+        hover:after:transtion hover:after:duration-500 hover:after:bg-secondary
+        "></div>
       </div>
 
-      <ul class="nav w-full bg-primary whitespace-nowrap text-20 text-center md:w-auto md:static md:opacity-100 md:space-x-14 md:translate-x-0">
-        <li class="w-1/2 border-x border-y border-white md:w-auto md:border-0 "><a class="block w-full py-3" href="products.html">系列鏡框</a></li>
-        <li class="w-1/2 border-r border-y border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">門市據點</a></li>
-        <li class="w-1/2 border-x border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" class="py-12" href="article.html">部落格</a></li>
-        <li class="w-1/2 border-r border-b border-white md:w-auto md:border-0 "><a class="block py-3 px-16 md:px-2" href="#">常見問題</a></li>
+      <ul class="js-nav flex flex-wrap absolute z-50 transition-all duration-500 top-[-150%] opacity-0 translate-x-[-50%] left-1/2 w-full bg-primary whitespace-nowrap text-sm text-center md:items-center md:w-auto md:static md:opacity-100 md:space-x-14 md:translate-x-0">
+        <li class="w-1/2 border-x border-y border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="products.html">系列鏡框</a></li>
+        <li class="w-1/2 border-r border-y border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="#">門市據點</a></li>
+        <li class="w-1/2 border-x border-b border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" class="py-12" href="article.html">部落格</a></li>
+        <li class="w-1/2 border-r border-b border-white md:w-auto md:border-0"><a class="block w-full py-3 hover:text-secondary" href="#">常見問題</a></li>
       </ul>
     </div>
   </div>
 
-  <ul class="productlinker flex justify-center text-center  font-bold  sm:text-2xl lg:text-[32px]">
-  <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">OPTICAL</a></li>
-  <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">SUNGLASSES</a>
+  <ul class="productlinker flex justify-center text-center font-bold text-sm sm:text-2xl lg:text-[32px]">
+  <li class="w-1/3 border-b border-l border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      OPTICAL</a>
   </li>
-  <li class="w-1/3 border-b border-l border-r border-gray-300"><a href="#"
-      class="w-full block py-4 text-black">FUNCTIONAL</a></li>
+  <li class="w-1/3 border-b border-l border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      SUNGLASSES</a>
+  </li>
+  <li class="w-1/3 border-b border-l border-r border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      FUNCTIONAL</a>
+  </li>
 </ul>
 
 <div class="flex">
@@ -54,102 +93,102 @@
   <ul class="flex flex-wrap gap-6 pt-6 md:gap-y-20 md:pt-8">
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-1.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-2.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-3.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-4.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-5.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-6.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-7.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-8.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-9.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-10.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-11.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-12.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
   </ul>
   <ul class="pagenation text-base my-16 whitespace-nowrap md:my-20 sm:text-[18px]">
-    <li><a href="#">上一頁</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">下一頁</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">上一頁</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">1</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">2</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">3</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">4</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">5</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">下一頁</a></li>
   </ul>
 </div>
 
   <div class="bg-primary">
-    <div class="container text-white">
+    <div class="container text-white text-xs">
       <div class="flex py-6 border-b border-white justify-between lg:pt-12 lg:pb-5 ">
         <div class="flex flex-col">
           <ul class="hidden  py-3 mb-9 md:flex  align-center gap-x-12">
@@ -160,10 +199,10 @@
             <li><a href="#">常見問題</a></li>
           </ul>
           <ul class="md:text-4xl">
-            <li class=""><i class="fa-solid fa-phone pr-[10px] lg:pr-5"></i><a
+            <li class=""><i class="fa-solid fa-phone pr-2.5 lg:pr-5"></i><a
                 href="tel:0800-000-000">0800-000-000</a>
             </li>
-            <li class=""><i class="fa-solid fa-envelope pr-[10px] lg:pr-5"></i><a
+            <li class=""><i class="fa-solid fa-envelope pr-2.5 lg:pr-5"></i><a
                 href="mailto:glasses@business.com">glasses@business.com</a></li>
           </ul>
         </div>
