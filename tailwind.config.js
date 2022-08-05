@@ -60,6 +60,10 @@ module.exports = {
       },
       container:{
         center:true,
+        padding:'12px',
+      },
+      boxShadow: {
+        'hamburger': '0 10px white',
       }
     },
   },

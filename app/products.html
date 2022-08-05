@@ -4,12 +4,46 @@ layout: ./app/layout.ejs
 engine: ejs
 current: products
 ---
-<ul class="productlinker flex justify-center text-center  font-bold  sm:text-2xl lg:text-[32px]">
-  <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">OPTICAL</a></li>
-  <li class="w-1/3 border-b border-l border-gray-300"><a href="#" class="w-full block py-4 text-black">SUNGLASSES</a>
+<ul class="productlinker flex justify-center text-center font-bold text-sm sm:text-2xl lg:text-[32px]">
+  <li class="w-1/3 border-b border-l border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      OPTICAL</a>
   </li>
-  <li class="w-1/3 border-b border-l border-r border-gray-300"><a href="#"
-      class="w-full block py-4 text-black">FUNCTIONAL</a></li>
+  <li class="w-1/3 border-b border-l border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      SUNGLASSES</a>
+  </li>
+  <li class="w-1/3 border-b border-l border-r border-gray-300 relative overflow-hidden transition-all duration-500
+  before:absolute before:w-full before:h-2 before:left-0 before:bottom-0 before:bg-white before:transition-all
+  before:duration-500 before:z-10
+  after:absolute after:w-full after:h-2 after:right-0 after:bottom-0 after:bg-white after:transition-all
+  after:duration-500 after:z-10
+  hover:before:transition-all hover:before:duration-500 hover:before:-left-full
+  hover:after:transition-all hover:after:duration-500 hover:after:-right-full
+  ">
+    <a href="#"
+      class="w-full block py-4 text-black relative duration-500 hover:text-primary hover:transition-all hover:duration-500
+  before:absolute before:w-full before:h-2 before:bottom-0 before:left-0 before:bg-primary before:transition-all before:duration-500">
+      FUNCTIONAL</a>
+  </li>
 </ul>
 
 <div class="flex">
@@ -28,96 +62,96 @@ current: products
   <ul class="flex flex-wrap gap-6 pt-6 md:gap-y-20 md:pt-8">
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-1.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-2.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-3.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-4.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-5.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-6.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-7.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-8.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-9.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-10.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-11.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
     <li class="w-full md:w-[48.2%] lg:w-[30%]">
       <img src="./assets/images/product-12.png" alt="product picture">
-      <div class="flex justify-between"><span class="font-bold text-black text-[24px] ">BJ41600S</span><span
-          class="font-bold text-primary text-[24px] ">NTD3,490</span></div>
+      <div class="flex justify-between"><span class="font-bold text-black text-2xl ">BJ41600S</span><span
+          class="font-bold text-primary text-2xl ">NTD3,490</span></div>
       <span class="bg-productColor-dark rounded-lg h-6 w-6 inline-block mr-2"></span><span
         class="bg-productColor-brown rounded-lg h-6 w-6 inline-block"></span>
     </li>
   </ul>
   <ul class="pagenation text-base my-16 whitespace-nowrap md:my-20 sm:text-[18px]">
-    <li><a href="#">上一頁</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">下一頁</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">上一頁</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">1</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">2</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">3</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">4</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">5</a></li>
+    <li><a class="px-1.5 py-2 sm:px-2.5 sm:py-3.5" href="#">下一頁</a></li>
   </ul>
 </div>

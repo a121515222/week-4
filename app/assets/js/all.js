@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
-const headerlink = document.querySelectorAll('.nav li a')
+const nav = document.querySelector('.js-nav');
+const headerlink = document.querySelectorAll('.js-nav li a')
 const pagenation = document.querySelectorAll('.pagenation li')
 
 hamburger.addEventListener('click', function () {
